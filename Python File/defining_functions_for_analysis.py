@@ -254,7 +254,7 @@ def save_dataframe(dataset: pd.DataFrame, name: str):
     try:
         data_name = name 
         date = time.strftime("%Y-%m-%d")
-        dataset.to_csv(f"../../Datasets/generated_data/section1/{data_name}_{date}.csv", index = True)
+        dataset.to_csv(f"../../Datasets/generated_data/{data_name}_{date}.csv", index = True)
         print("\nSuccessfully saved file to the specified folder ---> generated_data folder.")
     except FileNotFoundError:
         print("\nFailed to save file to the specified folder ---> generated_data folder.")

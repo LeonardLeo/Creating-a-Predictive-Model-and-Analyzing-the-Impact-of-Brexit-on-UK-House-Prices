@@ -2,15 +2,15 @@
 
 
 """
-You are required to carry out the following tasks:
+Here, we want to go through the following tasks:
 a. Identify and address any issues in the dataset. Then conduct exploratory data
-analysis on the dataset (10 marks)
+analysis on the dataset
 
 b. Analyse the relationships between price and the other features. What are your
-conclusions? (10 marks)
+conclusions?
 
 c. Analyse and visualise the impact of Brexit on house prices. What are your
-conclusions? (10 marks)
+conclusions?
 
 d. Build a predictive model to estimate house prices. You need to show how to:
         • Use appropriate methods to select relevant features.
@@ -30,14 +30,14 @@ from sklearn.feature_selection import SelectKBest, f_regression
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression, SGDRegressor, Lasso, Ridge
 from sklearn.neighbors import KNeighborsRegressor
-from solution1_functions import (eda,
+from defining_functions_for_analysis import (eda,
                                  build_multiple_regressors,
                                  save_model_from_cross_validation)
 import joblib
 from category_encoders import TargetEncoder
 
 # Get the dataset
-dataset = pd.read_csv("../../Datasets/Coursework Datasets/UK_Housing_Data.csv")
+dataset = pd.read_csv("../../Datasets/UK_Housing_Data.csv")
 
 
 
