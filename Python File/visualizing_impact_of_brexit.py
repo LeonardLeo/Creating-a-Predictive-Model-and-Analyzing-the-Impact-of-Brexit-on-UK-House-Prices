@@ -1,10 +1,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import joblib
 
 # Get the dataset
-dataset = joblib.load("Dataset")
+dataset = pd.read_csv("../../Datasets/UK_Housing_Data.csv")
 dataset = dataset[["TDate", "Price"]]
 dataset.info()
 
